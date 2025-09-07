@@ -13,4 +13,8 @@ export default defineConfig({
         }),
         react(),
     ],
+    test: {
+        environment: "jsdom",
+        setupFiles: ["./resources/js/tests/setup.js"]
+    },
 });
